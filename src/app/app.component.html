@@ -1,0 +1,9 @@
+<app-header (recipeLoaded)="recipeLoaded($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="flg"></app-recipes>
+      <app-shopping-list *ngIf="!flg"></app-shopping-list>
+    </div>
+  </div>
+</div>
